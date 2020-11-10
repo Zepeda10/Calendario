@@ -12,23 +12,23 @@ $(document).ready(function(){
   	var theme = $("#tema");
 
   	$("#to-green").click(function(){
-  		theme.attr("href","verde.css");
+  		theme.attr("href","css/verde.css");
   	});
 
   	$("#to-red").click(function(){
-  		theme.attr("href","rojo.css");
+  		theme.attr("href","css/rojo.css");
   	});
 
   	$("#to-blue").click(function(){
-  		theme.attr("href","azul.css");
+  		theme.attr("href","css/azul.css");
   	});
 
   	$("#to-purple").click(function(){
-  		theme.attr("href","morado.css");
+  		theme.attr("href","css/morado.css");
   	});
 
   	$("#to-brown").click(function(){
-  		theme.attr("href","marron.css");
+  		theme.attr("href","css/marron.css");
   	});
 
 
@@ -77,4 +77,17 @@ $(document).ready(function(){
 	function quita_mensaje(){
 		$("#mensaje").hide();
 	}
+
+	function abrir(){
+		document.getElementById("formulario").style.display="block";
+	}
+
+	function cerrar(){
+		document.getElementById("formulario").style.display="none";
+	}
+
+	function enviada(){
+		alert("Fecha enviada con éxito");
+	}
+
 

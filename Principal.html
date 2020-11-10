@@ -5,15 +5,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Calendatio diciembre</title>
 	<script src="../jquery-3.5.1.js"></script><!--Cagando Query-->
-	<link rel="stylesheet" href="estilos.css">
-	<link id="tema" rel="stylesheet" href="rojo.css">
-	<script type="text/javascript" src="Acciones.js"></script>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link id="tema" rel="stylesheet" href="css/rojo.css">
+	<script type="text/javascript" src="js/Acciones.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<h2 id="titulo">Calendario Diciembre 2020</h2>
+
 		<div id="selector-theme">
 			<p id="p">Seleccionar tema:</p>
 			<div id="to-red"></div>
@@ -22,6 +23,10 @@
 			<div id="to-purple"></div>
 			<div id="to-brown"></div>
 		</div>
+
+		<a href="javascript:abrir()">
+			<button id="btn">Enviar Fecha</button>
+		</a>
 
 	<table id="tabla1">
 		<thead>
@@ -170,6 +175,26 @@
 	</table>
 
 	<span id="mensaje"></span>
+
+	<div id="formulario">
+
+		<div id="cerrar">
+			<a href="javascript:cerrar()"><img src="img/error.ico" ></a>
+		</div>
+
+		<h2>Enviar Fecha</h2>
+		<form action="javascript:enviada()"  accept-charset="utf-8">
+			<label for="correo">Correo Electrónico</label><br><br>
+			<input type="text" placeholder="Introduce el email de destino"><br><br>
+			<label for="fecha">Fecha</label><br><br>
+			<input type="date" id="fecha"><br><br>
+			<label for="actividad">Actividad</label><br><br>
+			<textarea name="actividad"></textarea><br><br>
+			<button type="enviar">Enviar</button>
+		</form>
+
+
+	</div>
 	
 </body>
 </html>
