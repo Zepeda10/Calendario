@@ -185,12 +185,12 @@
 		<h2>Enviar Fecha</h2>
 		<form action="javascript:enviada()"  accept-charset="utf-8">
 			<label for="correo">Correo Electrónico</label><br><br>
-			<input type="text" placeholder="Introduce el email de destino"><br><br>
+			<input type="text" id="correo" placeholder="Email de destino"><br><br>
 			<label for="fecha">Fecha</label><br><br>
-			<input type="date" id="fecha"><br><br>
+			<input type="date" id="fecha" min="2020-12-01" max="2020-12-31"><br><br>
 			<label for="actividad">Actividad</label><br><br>
-			<textarea name="actividad"></textarea><br><br>
-			<button type="enviar">Enviar</button>
+			<textarea id="actividad" cols="30" rows="3" placeholder="Actividad del día"></textarea><br><br>
+			<button id="env" type="enviar">Enviar</button><br><br>
 		</form>
 
 

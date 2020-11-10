@@ -113,14 +113,41 @@ th, td{
 }
 
 #formulario{
-	background: blue;
+	margin:auto;
+	background: #F0F3F5;
+	box-shadow: 0 1px 5px rgba(34,34,34,0.75);
 	width: 30%;
 	padding: 33px;
 	position: absolute;
 	border-radius: 22px;
 	left:34%;
-	top:35%;
+	top:20%;
 	display: none;
+	font-size: 15px;
+}
+
+#correo, #actividad{
+	font-family:Verdana,Helvetica;
+	font-size: 18px;
+	border-radius: 5px;
+	border: 1px solid #797979;
+	width: 56%;
+}
+
+#env{
+	font-size:15px;
+    font-family:Verdana,Helvetica;
+    font-weight:bold;
+    color:white;
+    background: red;
+	line-height: 5px;
+	width: 100px;
+	height: 30px;
+	border:0px;
+}
+#env:hover {
+  background: #FF4A4A;
+  transition: all 0.2s ease;
 }
 
 
