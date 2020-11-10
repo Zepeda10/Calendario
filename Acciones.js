@@ -8,6 +8,22 @@ $(document).ready(function(){
 			elementos[i].addEventListener("mouseout",quita_mensaje,false);
 	}
 
+	//selector de temas
+  	var theme = $("#tema");
+
+  	$("#to-green").click(function(){
+  		theme.attr("href","verde.css");
+  	});
+
+  	$("#to-red").click(function(){
+  		theme.attr("href","rojo.css");
+  	});
+
+  	$("#to-blue").click(function(){
+  		theme.attr("href","azul.css");
+  	});
+
+
 });
 
 	var miTabla = 'tabla1'; // poner aquí el id de la tabla que queremos editar

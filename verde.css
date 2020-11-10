@@ -1,0 +1,30 @@
+body{
+	font-family: arial,verdana;
+}
+
+#titulo{
+	color: #044D0B;
+}
+
+#tabla1{
+	border-radius: 15px;
+	border: 2px solid transparent;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+thead{
+	background-color: #2D7A07;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #EBEBEB;
+}
+
+tbody tr:nth-child(odd){
+	background-color: #F5F5F5;
+}
+
+#mensaje{
+	background: linear-gradient(to bottom, #D3CC03, #C3B11A);
+}
