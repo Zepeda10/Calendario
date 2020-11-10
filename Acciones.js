@@ -1,7 +1,8 @@
 $(document).ready(function(){
+	$("#mensaje").hide();
 	iniciarTabla();
 
-	var elementos=document.querySelectorAll("td");
+	var elementos=document.querySelectorAll(".act");
     for (var i=0;i<elementos.length;i++){
 			elementos[i].addEventListener("mouseover",pon_mensaje,false);
 			elementos[i].addEventListener("mouseout",quita_mensaje,false);
@@ -45,10 +46,11 @@ $(document).ready(function(){
 
 	function pon_mensaje(){
 		tarea = $(this).text();
+		$("#mensaje").show().html("<p>Tarea del día: </p>"+tarea);
 		console.log(tarea);
 	} 
 
 	function quita_mensaje(){
-
+		$("#mensaje").hide();
 	}
 

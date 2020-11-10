@@ -1,0 +1,9 @@
+#mensaje{
+			float:left;
+			margin:15px;
+			background-color:green;
+			width:150px;
+			height:150px;
+			font-size:30px;
+			text-align:center;
+		}
