@@ -23,6 +23,14 @@ $(document).ready(function(){
   		theme.attr("href","azul.css");
   	});
 
+  	$("#to-purple").click(function(){
+  		theme.attr("href","morado.css");
+  	});
+
+  	$("#to-brown").click(function(){
+  		theme.attr("href","marron.css");
+  	});
+
 
 });
 

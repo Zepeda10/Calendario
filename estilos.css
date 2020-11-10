@@ -1,7 +1,7 @@
 #titulo{
 	margin-left: 28%;
 }
-
+ 
 #mensaje{
 	position:absolute;
 	left:82.5%;
@@ -17,6 +17,7 @@
 
 #tabla1{
 	margin:left;
+	margin-top: 30px;
 	padding:5px;
 	width: 80%;
 }
@@ -30,31 +31,53 @@ th, td{
 }
 
 #selector-theme{
-	position:fixed;
-	top:40%;
-	background: rgba(51,51,52,0.5);
-	width: 50px;
-	height: 100px;
+	padding: 10px;
 }
 
-#to-green,  #to-red, #to-blue{
+#to-green,  #to-red, #to-blue, #to-purple, #to-brown{
+	position: absolute;
 	width: 25px;
 	height: 25px;
 	border: 1px solid white;
-	display: block;
 	margin: 0px auto;
-	margin-top: 5px;
+	margin-top: 38px;
 	margin-bottom: 5px;
 	cursor:pointer;
 }
 
-#to-green{
-	background: #235E3D;
+#p{
+	left: 8%;
+	top: 30px;
+	position: absolute;
+	margin: 0px auto;
+	margin-top: 38px;
+	margin-bottom: 5px;
 }
+
 #to-red{
+	left: 20%;
+	top: 30px;
 	background: #CA3413;
 }
+#to-green{
+	left: 22.5%;
+	top: 30px;
+	background: #235E3D;
+}
 #to-blue{
+	left:25%;
+	top:30px;
 	background: #1F87C4;
 }
+#to-purple{
+	left:27.5%;
+	top:30px;
+	background: #5B0FB8;
+}
+#to-brown{
+	left:30%;
+	top:30px;
+	background: #7C3705;
+}
+
 
