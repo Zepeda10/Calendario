@@ -1,6 +1,12 @@
 $(document).ready(function(){
 	iniciarTabla();
 
+	var elementos=document.querySelectorAll("td");
+    for (var i=0;i<elementos.length;i++){
+			elementos[i].addEventListener("mouseover",pon_mensaje,false);
+			elementos[i].addEventListener("mouseout",quita_mensaje,false);
+	}
+
 });
 
 	var miTabla = 'tabla1'; // poner aquí el id de la tabla que queremos editar
@@ -37,6 +43,12 @@ $(document).ready(function(){
 	  }
 	}
 
+	function pon_mensaje(){
+		tarea = $(this).text();
+		console.log(tarea);
+	} 
 
+	function quita_mensaje(){
 
+	}
 
