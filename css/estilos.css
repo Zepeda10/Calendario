@@ -1,6 +1,10 @@
 #titulo{
 	margin-left: 28%;
 }
+
+.festivo{
+	background-color: #34F10F;
+}
  
 #mensaje{
 	position:absolute;
@@ -149,5 +153,6 @@ th, td{
   background: #FF4A4A;
   transition: all 0.2s ease;
 }
+
 
 
